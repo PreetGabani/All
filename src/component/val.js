@@ -1,0 +1,20 @@
+const val = (values) => {
+let errors={};
+
+if(!values.email){
+    errors.email = "Email is Required";
+}else if(!/\S+@\S+\.\S+/.test(values.email)){
+    errors.email = "Email is invalid"
+}
+
+if(!values.password){
+    errors.password = "Password is Required";
+}else if(/^[a-zA-Z0-9!@#\$%\^\&*_=+-]$/g.test(values.password)){
+    errors.password="Password contain at least one spacial character"
+}else if(values.password.length < 8 ){
+    errors.password="Password length must be 8character"
+}
+
+    return errors;
+}
+export default val;

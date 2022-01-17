@@ -1,38 +1,154 @@
-.App {
+.signup{
   text-align: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.signin{
+  text-align: center;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+label{
+  margin-left: 3mm;
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.signup-link{
+  text-decoration: none;
+}
+
+.home{
+  text-align: center;
+}
+
+
+.button {
+  border-radius: 4px;
+  background-color: #ebe4e2;
+  border: none;
+  color: #FFFFFF;
+  text-align: center;
+  font-size: 28px;
+  padding: 20px;
+  width: 200px;
+  margin: 2mm;
+  margin-top: 20mm;
+}
+
+.button:hover {background-color: #abddad}
+
+.error{
+  font-size: 12px;
+  width: 100%;
+  color: red;
+}
+
+.bg-myRed{
+  background-color: crimson;
+}
+
+.content{
+  padding: 12px;
+  height: 3000px;
+}
+
+.coloring{
+  color: black;
+}
+
+.text{
+  margin-top: 30mm;
+}
+
+.navbar li:hover {
+  background-color: rgb(204, 253, 224);
+}
+
+.Record{
+  margin-top: 15mm;
+  margin-left: 50mm;
+  margin-right: 50mm;
+}
+
+.header{
+  background-color: rgb(204, 253, 224);
+}
+
+.reducerHome{
+  margin-top: 100px;
+  text-align: center;
+  padding: 10mm;
+}
+
+.inc_dec{
+  margin-top: 30px;
+}
+
+.input{
+  width: 50px;
+  text-align: center;
+  height: 50px;
+  background-color: #abddad;
+  border-radius: 15px;
+  border: none;
+}
+
+.incdec_button{
+  border-radius: 15px;
+  border: none;
+  text-align: center;
+  width: 50px;
+  height: 50px;
+  margin: 5mm;
+}
+
+.incdec_button:hover {background-color: #abddad}
+
+
+.card_align{
   display: flex;
-  flex-direction: column;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-left: 100px;
 }
 
-.App-link {
-  color: #61dafb;
+.card{
+  display: inline-flex;
+  width: 500px;
+  margin: 0 20px;
+  padding: 25px 20px;
+  /* flex-direction: column; */
+  margin-bottom: 4mm;
+  margin-left: 27px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.card-text{
+  margin-top: 10px;
+  overflow: hidden;
+  /* max-height: 75px; */
+}
+
+.link:hover{
+  color: yellow;
+}
+
+.error{
+  color: red;
+  text-align: center;
+}
+
+@import url("https://cdn.syncfusion.com/ej2/material.css");
+
+/* .dateRange{
+  margin-left: 20mm;
+  margin-right: 20mm;
+} */
+
+.range{
+  max-width: 70mm;
+  margin-left: 510px;
+}
+
+.date{
+  margin-left: 100mm;
+}
+
+.filter{
+  margin-left: 100mm;
 }

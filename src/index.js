@@ -3,10 +3,18 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import "../node_modules/bootstrap/dist/css/bootstrap.min.css";
+import Store from "../src/store"
+import { Provider } from "react-redux"
+import 'react-toastify/dist/ReactToastify.css';
+
+Store.subscribe(()=>console.log(Store.getState())); 
 
 ReactDOM.render(
   <React.StrictMode>
-    <App />
+    <Provider store={Store}>
+      <App />
+    </Provider>
   </React.StrictMode>,
   document.getElementById('root')
 );
